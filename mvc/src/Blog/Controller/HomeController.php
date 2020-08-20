@@ -3,14 +3,14 @@
 namespace Blog\Controller;
 
 use Blog\Model\ArticleRepository;
-use Twig_Enviroment;
+use Twig_Environment;
 
 class HomeController
 {
     private $articleRepository;
     private $twig;
 
-    public function __construct(ArticleRepository $articleRepository, Twig_Enviroment $twig)
+    public function __construct(ArticleRepository $articleRepository, Twig_Environment $twig)
     {
         $this->articleRepository = $articleRepository;
         $this->twig = $twig;
@@ -19,7 +19,7 @@ class HomeController
     public function __invoke()
     {
         echo $this->twig->render('home.twig', [
-            'articles' => $this->repository->getArticles()
+            'articles' => $this->articleRepository->getArticles(),
         ]);
     }
 }

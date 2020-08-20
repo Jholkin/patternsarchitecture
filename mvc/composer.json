@@ -1,7 +1,8 @@
 {
+    "name": "mvc/blog",
     "autoload": {
         "psr-4": {
-            "Blog\\": "Blog/"
+            "Blog\\": "src/Blog/"
         }
     },
     "require": {

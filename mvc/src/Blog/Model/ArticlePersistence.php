@@ -26,6 +26,6 @@ class ArticlePersistence implements ArticleRepository
     {
         $article = $this->db->query("SELECT * FROM articles WHERE id='{$id}';");
 
-        return $article->fetch(PDO::FETCH_OBJ);
+        return $article->fetch(\PDO::FETCH_OBJ);
     }
 }

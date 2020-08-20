@@ -6,5 +6,5 @@ interface ArticleRepository
 {
     public function getArticles();
 
-    public function getArcticle($id);
+    public function getArticle($id);
 }

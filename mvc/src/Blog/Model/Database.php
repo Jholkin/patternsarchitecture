@@ -14,10 +14,10 @@ class Database
     {
         if (!(self::$dbh instanceof self)) {
             try {
-                self::$dbh = new PDO('mysql:host=localhost;dbname=mvc','root','');
+                self::$dbh = new \PDO('mysql:host=localhost;dbname=mvc','root','');
                 self::$dbh->query('SET NAMES utf8');
             } catch (PDOException $e) {
-                echo e->getMessage();
+                echo $e->getMessage();
             }
         }
 
