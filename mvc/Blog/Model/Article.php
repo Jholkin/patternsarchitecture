@@ -1,6 +1,6 @@
 <?php
 
-namespace MVC\Model;
+namespace Blog\Model;
 
 class Article
 {

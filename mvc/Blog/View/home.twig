@@ -1,0 +1,27 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+    <h1>Bienvenido al super Blog!!</h1>
+
+    <p>Listado de artículos:</p>
+
+    <ul class="collection">
+
+        {% for article in articles %}
+            <li class="collection-item avatar">
+
+                <i class="mdi-editor-insert-comment circle"></i>
+
+                <span class="title">{{ article.title }}</span>
+
+                <p>{{ article.content }}</p>
+
+                <p><a href="/article/{{ article.id }}">Read more</a></p>
+
+            </li>
+        {% endfor %}
+
+    </ul>
+
+{% endblock %}

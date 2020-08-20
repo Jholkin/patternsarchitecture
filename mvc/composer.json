@@ -1,5 +1,12 @@
 {
+    "autoload": {
+        "psr-4": {
+            "Blog\\": "Blog/"
+        }
+    },
     "require": {
-        "php-di/php-di": "^6.2"
+        "php-di/php-di": "^6.2",
+        "nikic/fast-route": "~0.5.0",
+        "twig/twig": "^1.18"
     }
 }

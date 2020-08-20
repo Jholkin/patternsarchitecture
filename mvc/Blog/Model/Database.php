@@ -1,5 +1,7 @@
 <?php
 
+namespace Blog\Model;
+
 class Database
 {
     private static $dbh;
