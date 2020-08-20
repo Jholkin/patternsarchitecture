@@ -11,7 +11,7 @@ return [
 
     // configure twig
     Environment::class => function() {
-        $loader = new FilesystemLoader(__DIR__ . '/../src/Blog/View');
+        $loader = new FilesystemLoader(__DIR__ . '/../Blog/View');
         return new Environment($loader);
     }
 ];
