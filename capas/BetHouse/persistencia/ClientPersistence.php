@@ -22,4 +22,9 @@ class ClientPersistence
 
         return $statement->execute() ? true : false;
     }
+
+    public function getBets($client_id)
+    {
+        $sql = "SELECT * FROM ";
+    }
 }

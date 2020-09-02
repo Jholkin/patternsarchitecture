@@ -5,6 +5,7 @@ class Client
     private $id;
     private $name;
     private $balance;
+    private $username;
 
     public function __construct()
     {
@@ -38,5 +39,15 @@ class Client
     public function setBalance($balance)
     {
         $this->balance = $balance;
+    }
+
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    public function setUsername($username)
+    {
+        $this->username = $username;
     }
 }

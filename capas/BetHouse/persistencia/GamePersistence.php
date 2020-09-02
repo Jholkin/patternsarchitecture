@@ -21,4 +21,9 @@ class GamePersistence
         $game = $this->db->query("SELECT * FROM game WHERE id={'$id'};");
         return $game->fetch(PDO::FETCH_OBJ);
     }
+
+    public function save()
+    {
+        
+    }
 }

@@ -13,8 +13,8 @@ class BetManagement
         $availableBalance = $this->checkAvailableBalance($client->getBalance(), $game->getCostBet());
 
         if ($availableBalance) {
-            $updatedBalance = $this->discountBalanceClient($client->getBalance(), $game->getCostBet());
-            $clientPersistence->updateBalance($client, $updatedBalance);
+            $newBalance = $this->discountBalanceClient($client->getBalance(), $game->getCostBet());
+            $clientPersistence->updateBalance($client, $newBalance);
         }
     }
 
