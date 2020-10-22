@@ -1,0 +1,13 @@
+{
+    "name": "SecondModule",
+    "alias": "secondmodule",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SecondModule\\Providers\\SecondModuleServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
