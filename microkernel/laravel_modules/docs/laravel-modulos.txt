@@ -1,5 +1,5 @@
 paquete: nwidart/laravel-modules
--> install: composer install nwidart/laravel-modules
+-> install: composer require nwidart/laravel-modules
 -> publish: php artisan vendor:publish --provider=”Nwidart\Modules\LaravelModulesServiceProvider”
 -> register in composer.json: "Modules\\":"Modules/"
 -> update autoload: composer dump-autoload
